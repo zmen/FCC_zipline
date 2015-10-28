@@ -1,0 +1,144 @@
+/*CSS Reset*/
+html, body, 
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+html, body {
+	height: 100%;
+}
+/*General group*/
+.fixed-background {
+	background-size: cover !important;
+	background-attachment: fixed !important;
+	background-repeat: no-repeat !important;
+}
+p {
+	letter-spacing: 2px;
+}
+
+/*header styles*/
+nav {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 50px;
+	background: #375CAF;
+	color: white;
+}
+nav a {
+	display: inline-block;
+	color: white;
+}
+nav .logo {
+	margin-left: 50px;
+	line-height: 50px;
+}
+nav ul {
+	float: right;
+	margin-right: 50px;
+}
+nav ul li{
+	display: inline-block;
+}
+
+header {
+	height: 100%;
+}
+#banner {
+	height: 100%;
+	background: #1F637D;
+	background-image: url(#);
+	background-size: cover;
+}
+.wrapper {
+	max-width: 700px;
+	margin: 0 auto;
+	position: relative;
+	top: 30%;
+	text-align: center;
+}
+
+
+/*About */
+#about {
+	background: #2D608C;
+	overflow: hidden;
+	background-image: url(#);
+}
+.intro {
+	width: 40%;
+}
+.portrait {
+	background: #bbb;
+}
+#about > div {
+	float: left;
+	margin-top: 200px;
+	margin-left: 10%;
+	margin-bottom: 300px;
+}
+.portrait-holder {
+	width: 100px;
+	height: 100px;
+	background: #000;
+	display: none; /*Leave empty until I find a suitable image*/
+}
+
+/*Profilio*/
+#profilio {
+	background: #22887A;
+	text-align: center;
+	overflow: hidden;
+	background-image: url(#);
+}
+.row {
+	width: 700px;
+}
+.row .holders {
+	width: 350px;
+	height: 200px;
+	background: #ccc;
+	float: left;
+	border-bottom: 1px solid #ccc;
+}
+.holders:nth-child(1){
+	background: rgba(0,0,0,0.4);
+}
+.holders:nth-child(2){
+	background: rgba(0,0,0,0.2);
+}
+.last-row .holders{
+	border: none;
+	margin-bottom: 50px;
+}
+
+
+/*Contact*/
+#contact {
+	background: #bbb;
+	text-align: center;
+	height: 500px;
+	background-image: url(#);
+}
+#contact ul li {
+	background-color: #ccc;
+	margin: 0 auto;
+	border-bottom: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+}
+
+/*Footer*/
+footer {
+	text-align: center;
+	background: #bbb;
+}

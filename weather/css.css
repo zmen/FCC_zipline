@@ -1,0 +1,35 @@
+body {
+	background-color: #1B6393;
+	color: white;
+	letter-spacing: 0;
+	background-image: url(sunny.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.wrapper {
+	min-height: 800px;
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+#intro {
+	height: 150px;
+	width: inherit;
+}
+.details {
+	height: 650px;
+	width: inherit;
+}
+.details > * {
+	height: 50px;
+}
+#cityLoc, #weather, #wind {
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	line-height: 50px;
+	display: inline-block;
+	background-color: rgba(200,200,200,0.3);
+	box-shadow: 3px 3px #333;
+	border-radius: 5px;
+}

@@ -1,0 +1,89 @@
+/*CSS reset*/
+*{
+	margin:0;
+	padding:0;
+/*	letter-spacing: -9px;*/
+	word-spacing: -5px;
+}
+/*General set*/
+.cal {
+	height: 700px;
+	width: 400px;
+	background-color: #F3F1F1;
+	box-shadow: 2px 2px 2px #222;
+	position: absolute;
+	top: 200px;
+	border: 1px solid #555;
+}
+.unfinish {
+	color: gray;
+}
+.unfinish:hover {
+	background: inherit;
+}
+/*Header*/
+.title {
+	height: 25px;
+	margin-left: 10px;
+}
+.title h1 {
+	line-height: 25px;
+	font-size: 1em;
+}
+.menu {
+	height: 30px;
+	margin-left: 10px;
+}
+.menu h2 {
+	line-height: 30px;
+	font-size: 1em;
+	font-weight: bold;
+}
+/*Screen*/
+.screen .sub-screen {
+	height: 30px;
+	text-align: right;
+}
+.screen .main-screen {
+	height: 120px;
+	text-align: right;
+}
+#equation {
+	padding-right: 20px;
+}
+#result {
+	padding-right: 20px;
+	font-size: 60px;
+}
+/*Keyboard*/
+.keyboard {
+	height: 495px;
+}
+.keyboard .sub-key {
+	height: 120px;
+}
+.keyboard .main-key{
+	height: 375px;
+}
+button {
+	border: none;
+	background: none;
+}
+.keyboard .small {
+	width: 80px;
+	height: 45px;	
+}
+.keyboard .normal {
+	width: 100px;
+	height: 75px;		
+}
+.normal {
+	font-size: 1.2em;
+	background-color: #E3E3E3;
+}
+button:hover {
+  background-color: #ccc;
+}
+button:active {
+  background-color: #bbb;
+}

@@ -1,0 +1,45 @@
+body {
+	background: #CC9722;
+}
+.wrapper {
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+.title {
+	padding-top: 100px;
+	font-size: 50px;
+	color: #FFFFFF;
+}
+#screen {
+	background: radial-gradient(#FFFFFF, #D6D6D6, #FFFFFF);
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 80px;
+	line-height: 400px;
+	box-shadow: 2px 2px 2px #333;
+}
+.btns {
+	width: 400px;
+	margin: 20px auto;
+
+}
+.btns > * {
+	width: 100px;
+	height: 50px;
+	margin: 10px;
+	padding: none;
+	border: none;
+	background: linear-gradient(#A5A0A0,#E8E7E7);
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #222;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+#reset, #start {
+	width: 220px;
+}
