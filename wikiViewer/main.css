@@ -1,0 +1,50 @@
+html,body {
+	background: #eee url(wallpaper.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+}
+a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	border: 1px solid grey;
+	padding: 20px;
+	width: 660px;
+}
+a > * {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	position: relative;
+	top: 200px;
+	left: 200px;
+}
+.wrapperAfter {
+	top: 20px;
+	left: 20px;
+}
+.searchbar {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.searchArea {
+	width: 800px;
+	height: 50px;
+}
+.searchArea input {
+	height: inherit;
+	width: 500px;
+	font-size: 20px;
+}
+.searchArea button {
+	height: inherit;
+	width: 200px;
+	margin-left: -3px;
+	font-size: 20px;
+}
