@@ -1,32 +1,29 @@
-html,body {
-	background: #eee url(wallpaper.jpg);
+body {
+	background: #fff;
+	/* get Bing background image*/
+	background-image: url(http://area.sinaapp.com/bingImg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height: 100%;
 	width: 100%;
 }
-a {
-	display: block;
-	text-decoration: none;
-	color: white;
-	background-color: rgba(0,0,0,0.5);
-	border: 1px solid grey;
-	padding: 20px;
-	width: 660px;
+
+.bodyAfter {
+	background-image: none;
 }
-a > * {
-	margin: 0;
-	padding: 0;
-}
+
 .wrapper {
 	position: relative;
 	top: 200px;
 	left: 200px;
 }
+
 .wrapperAfter {
-	top: 20px;
-	left: 20px;
+	position: relative;
+	top: 40px;
+	left: 50px;
 }
+
 .searchbar {
 	display: block;
 	width: 100%;
@@ -34,17 +31,69 @@ a > * {
 }
 
 .searchArea {
-	width: 800px;
+	width: 1000px;
 	height: 50px;
 }
+
 .searchArea input {
 	height: inherit;
-	width: 500px;
+	width: 600px;
+	padding-left: 10px;
 	font-size: 20px;
 }
+
+.searchArea #curtain {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0);
+	z-index: -1;
+}
+
+.searchArea .search:focus ~ #curtain {
+	background: rgba(0,0,0,0.7);
+	z-index: -1;
+}
+
 .searchArea button {
 	height: inherit;
 	width: 200px;
-	margin-left: -3px;
+	border: none;
+	margin-left: -5px;
 	font-size: 20px;
+	background: #136A9C;
+	color: #fff;
+	cursor: pointer;
+}
+
+.content {
+	position: relative;
+	margin-top: 20px;
+}
+
+.content p {
+	display: block;
+	width: 600px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+a > h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+/* class "searchmatch" is default set by wiki callback */
+.matchText, .searchmatch {
+	color: red;
 }

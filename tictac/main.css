@@ -1,0 +1,54 @@
+/*CSS normalize*/
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*Main Style*/
+.container {
+	position: relative;
+	width: 1000px;
+	height: 1000px;
+	top: 100px;
+	margin: 0 auto;
+}
+
+.tictac {
+	position: relative;
+	width: 620px;
+	height: 620px;
+	margin: 0 auto;
+}
+.background {
+	position: absolute;
+	width: 620px;
+	height: 620px;
+	background: #bbb;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.cells {
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	background: #ccc;
+	margin: 10px;
+	font-size: 0;
+}
+
+.cells button {
+	width: 200px;
+	height: 200px;
+	font-size: 16px;
+}
+
+button.activeO {
+	background-image: url(O.png);
+	background-size: cover;
+}
+
+button.activeX {
+	background-image: url(X.png);
+	background-size: cover;
+}
