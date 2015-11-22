@@ -6,13 +6,24 @@
 	<link rel="stylesheet" href="css.css">
 </head>
 <body>
-	<div class="cal">
-		<div class="header">
-			<div class="title">
-				<h1>计算器</h1>
-			</div>
-			<div class="menu">
-				<h2>标准</h2>
+	<div class="cal draggable">
+		<h1>计算器</h1>
+		<div class="menu">
+			<input type="checkbox" />
+			<div class="icon"></div>
+			<h2>标准</h2>
+			<div class="side-menu">
+				<h3>计算器</h3>
+				<ul>
+					<li>标准</li>
+					<li>科学</li>
+					<li>程序员</li>
+					<li>转换器</li>
+					<li>体积</li>
+					<li>长度</li>
+					<li>重量和质量</li>
+					<li>温度</li>
+				</ul>
 			</div>
 		</div>
 		<div class="screen">
@@ -25,39 +36,49 @@
 		</div>
 		<div class="keyboard">
 			<div class="sub-key">
-				<button class="small unfinish">S</button>
-				<button class="small unfinish">M</button>
-				<button class="small unfinish">M</button>
-				<button class="small unfinish">M</button>
-				<button class="small unfinish">M</button>
-				<button class="normal unfinish">N</button>
-				<button class="normal unfinish">N</button>
-				<button class="normal unfinish">N</button>
-				<button class="normal unfinish">N</button>
+				<button class="small disabled">MC</button>
+				<button class="small disabled">M+</button>
+				<button class="small disabled">M-</button>
+				<button class="small disabled">MR</button>
+				<button class="small disabled">MS</button>
+				<button class="normal ">%</button>
+				<button class="normal ">_/</button>
+				<button class="normal ">x2</button>
+				<button class="normal ">1/x</button>
 			</div>
 			<div class="main-key">
 				<button class="normal">CE</button>
 				<button class="normal">C</button>
 				<button class="normal">DEL</button>
 				<button class="normal">/</button>
-				<button class="normal">7</button>
-				<button class="normal">8</button>
-				<button class="normal">9</button>
-				<button class="normal">*</button>
-				<button class="normal">4</button>
-				<button class="normal">5</button>
-				<button class="normal">6</button>
+				<button class="normal num">7</button>
+				<button class="normal num">8</button>
+				<button class="normal num">9</button>
+				<button class="normal num">*</button>
+				<button class="normal num">4</button>
+				<button class="normal num">5</button>
+				<button class="normal num">6</button>
 				<button class="normal">-</button>
-				<button class="normal">1</button>
-				<button class="normal">2</button>
-				<button class="normal">3</button>
+				<button class="normal num">1</button>
+				<button class="normal num">2</button>
+				<button class="normal num">3</button>
 				<button class="normal">+</button>
-				<button class="normal unfinish">+/-</button>
+				<button class="normal">+/-</button>
 				<button class="normal">0</button>
 				<button class="normal">.</button>
 				<button class="normal">=</button>
 			</div>
 		</div>
+	</div>
+
+	<div class="infos">
+		<h2>Drag this calc away to view more feathers</h2>
+		<ul>
+			<li>It is draggable, you have got it.</li>
+			<li>All button except grey ones are available, have a try.</li>
+			<li>See the button at the top left? Click to expand a menu.</li>
+			<li>However the content of the menu is uncompleted yet.</li>
+		</ul>
 	</div>
 
 	<script type="text/javascript" src="js.js"></script>
